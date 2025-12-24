@@ -495,10 +495,10 @@
                 selectedIndex = bestIdx;
 
             } else if (state === 'PHOTO') {
-                // 保持照片尺寸较小，类似EXPLODE状态
+                // 照片放大到两倍
                 const isMobile = window.innerWidth <= 768;
-                // 使用较小的缩放值，保持和未focus时类似的尺寸
-                const photoScale = isMobile ? 1.2 : 1.5;
+                // 放大两倍
+                const photoScale = isMobile ? 2.4 : 3.0;
                 const photoZ = isMobile ? 40 : 50;
                 
                 photoMeshes.forEach((mesh, i) => {
